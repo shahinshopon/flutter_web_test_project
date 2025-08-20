@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -122,8 +123,8 @@ class _MyHomePageState extends State<MyHomePage> {
     onPressed: () {
       Navigator.push(
     context,
-    MaterialPageRoute<void>(
-      builder: (context) => const Splash(),
+    MaterialPageRoute(
+      builder: (context) =>  Splash(),
     ),
   );
     },
