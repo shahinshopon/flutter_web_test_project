@@ -110,25 +110,25 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            TextButton(
-    style: TextButton.styleFrom(
-              TextStyle(
-                height: 1.2,
-                fontFamily: 'Dubai',
-                fontSize: 13,
-                color: Colors.blue,
-                fontWeight: FontWeight.w500,
-              ),
-           ),
-    onPressed: () {
-      Navigator.push(
-    context,
-    MaterialPageRoute(
-      builder: (context) =>  Splash(),
+            InkWell(
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) =>  Splash(),
+      ),
+    );
+  },
+  child: Text(
+    'Press',
+    style: TextStyle(
+      fontSize: 13,
+      color: Colors.blue,
+      fontWeight: FontWeight.w500,
     ),
-  );
-    },
-    child: const Text('Press'),
+  ),
+)
+
           ],
         ),
       ),
