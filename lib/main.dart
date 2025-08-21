@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'splash.dart';
-import 'dart:math';
 
 void main() {
   runApp(const MyApp());
@@ -111,8 +110,8 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            FlatButton(
-  onPressed: () {
+            InkWell(
+  onTap: () {
     Navigator.push(
       context,
       MaterialPageRoute(
